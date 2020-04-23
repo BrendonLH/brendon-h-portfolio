@@ -1,0 +1,17 @@
+#navBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 100%;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+a:hover {
+    text-shadow: .5px .5px goldenrod;
+}
+
+.nav {
+    background-color: rgb(240, 240, 229);
+}
