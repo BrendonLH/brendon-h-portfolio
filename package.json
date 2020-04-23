@@ -2,7 +2,7 @@
   "name": "brendon-h-portfolio",
   "version": "1.0.0",
   "description": "This is a project for my portfolio showcasing my projects and what i have build",
-  "main": "app.js",
+  "main": "./server/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
@@ -26,5 +26,6 @@
     "mustache": "^4.0.1",
     "pg": "^8.0.2",
     "superagent": "^5.2.2"
-  }
+  },
+  "devDependencies": {}
 }
