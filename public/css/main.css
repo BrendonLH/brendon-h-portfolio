@@ -2,5 +2,10 @@ body {
     box-sizing: border-box;
     max-width: 100%;
     text-align: center;
+    background-image: url(../img/20190724_181419\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: palegoldenrod;
+    text-shadow: 1px 1px teal;
     
 }
