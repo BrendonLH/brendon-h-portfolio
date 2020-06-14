@@ -16,13 +16,13 @@ app.set('view engine', 'ejs');
 
 // routes to ejs pages
 
+// main home page
 
-// home
-app.get('/home');
+app.get('/', (request, response) => {
+  response.status(200).render('pages/index.ejs');
+});
+// login
 
-// bio
-
-// projects
 
 // Force Error
 //404 Not Found
