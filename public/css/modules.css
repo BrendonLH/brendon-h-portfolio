@@ -16,31 +16,38 @@ header p {
 }
 
 main h2 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 main {
-    display: flex;
-    justify-content: center;
     padding: 30px 20px;
     min-height: calc(100vh - 144px - 56px);
 }
 
 article {
     background-color: #fff;
-    max-width: 50%;
+    max-width: 52%;
+    text-align: center;
+    margin: auto;
 }
 
 footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     text-align: center;
     background-color: #333;
     color: #fff;
-    padding: 20px;
+    padding: 5px;
 }
  
 article img {
     display: block;
     margin: auto auto 1.2rem auto;
+    width: 200px;
+}
+article p {
+    margin-top: 1rem;
 }
 
 nav ul {
