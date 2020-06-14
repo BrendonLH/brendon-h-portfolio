@@ -15,20 +15,42 @@ header p {
     font-size: 1.5rem;
 }
 
-main h2 {
-    font-size: 1.5rem;
+
+article h2 {
+    font-size: 1.3rem;
+    margin-top: 1rem;
 }
 
 main {
-    padding: 30px 20px;
+    padding: 0px 30px 20px;
     min-height: calc(100vh - 144px - 56px);
 }
 
+li i {
+    font-size: 200px;
+    margin-bottom:1rem;
+}
+
+li div {
+    text-align: center;
+}
+
+
+#icons ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin:0.5rem auto 3rem auto;
+    width: 50%;
+}
+
 article {
+    display: flex;
     background-color: #fff;
     max-width: 52%;
     text-align: center;
-    margin: auto;
+    margin:auto;
 }
 
 footer {
@@ -44,17 +66,23 @@ footer {
 article img {
     display: block;
     margin: auto auto 1.2rem auto;
-    width: 200px;
+    width: 250px;
 }
 article p {
     margin-top: 1rem;
+    line-height: 1.5rem;
 }
 
 nav ul {
     padding:0.5rem 0;
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
+}
+nav a {
+    text-decoration: none;
+    color:#fff;
 }
 #images {
     display: grid;
