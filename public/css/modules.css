@@ -44,7 +44,39 @@ article img {
 }
 
 nav ul {
+    padding:0.5rem 0;
     position: fixed;
     top: 0;
     width: 100%;
+}
+#images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+@keyframes profile-transition {
+    0% {
+        opacity:1;
+    }
+    45% {
+        opacity:0;
+    }
+    55% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+    
+.image1 { 
+    grid-area: 1 / 2 / 2 / 3; 
+}
+.image2 { 
+    grid-area: 1 / 2 / 2 / 3;
+    animation: profile-transition 30s infinite; 
+    
+    
 }
