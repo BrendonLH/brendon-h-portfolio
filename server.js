@@ -15,16 +15,20 @@ app.use(express.static('./public'));
 app.set('view engine', 'ejs');
 
 // routes to ejs pages
+app.get('/', handleHomePage);
+app.get('/login', handleLoginPage);
 
 // main home page
 
-app.get('/', (request, response) => {
+function handleHomePage(request, response) {
   response.status(200).render('pages/index.ejs');
-});
+}
 // login
-app.get('/login', (request, response) => {
+function handleLoginPage(request,response) {
   response.status(200).render('pages/login.ejs');
-})
+}
+
+
 
 // Force Error
 //404 Not Found

@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brendon Hampton Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    
-</head>
+
+<%- include('../partials/head.ejs') %>
+
 <body onload="brendon()">
 <!-- scripts for templates -->
 <script id="template" type="x-tmpl-mustache">Hello my name is {{name}}, I am a {{age}} year old Software Developer living In Seattle, WA.</script>
+
 <script id="skills" type="x-tmpl-mustache">I’ll be honest, I didn’t plan on changing my career. I was practicing some basic programming such as {{skills.html}}, some {{skills.css}} and a little bit of {{skills.js}} because I enjoyed it, then I realized that if I want to make something serious out of it, I need to learn the industry and practices. So here I am. I really enjoy solving problems and I am technically proficient. Between building my truck, motorcycle and tearing apart any electronic I can, I have always wanted to build the brain of a machine. It honestly started when I saw the first Iron Man Movie. I want my own Jarvais. I think front end development is the natural path to programming.</script>
 
  <!--rendered content  -->
@@ -23,13 +20,50 @@
     </header>
 
     <Main>
+        <div id="icons">
+            <ul>
+                <li><i class="fab fa-html5 icon-2x"></i>
+                    <div>
+                        <p>HTML</p>
+                    </div>
+                </li>
+                <li><i class="fab fa-css3"></i>
+                    <div>
+                        <p>CSS</p>
+                    </div>
+                </li>
+                <li><i class="fab fa-js-square"></i>
+                    <div>
+                        <p>JavaScript</p>
+                    </div>
+                </li>
+                <li><i class="fas fa-database"></i>
+                    <div>
+                        <p>PostgreSQL</p>
+                    </div>
+                </li>
+                <li><img src="https://img.icons8.com/ios-filled/200/000000/jquery.png"/>
+                    <div>
+                        <p>JQuery</p>
+                    </div>
+                </li>
+                <li><img src="https://img.icons8.com/ios-filled/200/000000/english-mustache.png"/>
+                    <div>
+                        <p>Mustache</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
         <article id="AboutMe">
             <div id="images">
                 <img class="image2" src="/img/profile_image1.jpg" alt="">
                 <img class="image1" src="/img/20190605_101149.jpg" alt="">
             </div>
-            <h2 id="title">Loading...</h1>
-            <p id="forte">Loading...</p>
+            <div id="info">
+                <h2 id="title">Loading...</h2>
+                <p id="forte">Loading...</p>
+            </div>
+            
         </article>
         <article id="skills">
 
@@ -41,8 +75,7 @@
     <p>Copyright &copy; Brendon Hampton : 2020</p>
 </footer>
     
-    <script src="app.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.1.0/mustache.min.js"></script>
+<%- include('../partials/scripts.ejs') %>
+    
 </body>
 </html>
