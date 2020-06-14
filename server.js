@@ -22,7 +22,9 @@ app.get('/', (request, response) => {
   response.status(200).render('pages/index.ejs');
 });
 // login
-
+app.get('/login', (request, response) => {
+  response.status(200).render('pages/login.ejs');
+})
 
 // Force Error
 //404 Not Found
